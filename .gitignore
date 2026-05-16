@@ -1,0 +1,17 @@
+# Python venv used by remove_pillbox_backgrounds.py — host-specific, never commit
+.venv/
+
+# Source ZIP — duplicates the extracted images/, no point in shipping both
+pillbox_images.zip
+
+# Generated SQLite DB — built from pillbox_meta.csv in seconds, no point committing
+pillbox.db
+
+# User-uploaded pill photos — PERSONAL DATA. These are pictures of the meds
+# the operator is actually taking. The data/ tree is gitignored by the
+# parent bina-health repo already, but pin it here too so this directory
+# also never lands in the public nlm-pillbox-images data repo.
+user_photos/
+
+# macOS
+.DS_Store
